@@ -74,10 +74,10 @@
                     var str = $("<tr></tr>");
 
                     // Level
-                    $("<td width='5%'>" + mark + x + "</td>").appendTo(str);
+                    $("<td width='10%'>" + mark + x + "</td>").appendTo(str);
 
                     // Title
-                    $("<td width='45%'>" +
+                    $("<td width='35%'>" +
                         "<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=" + info[
                             i]
                         .md5 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
@@ -123,7 +123,7 @@
         }
                     
                     // Comment
-                    $("<td width='10%'>" + info[i].comment + "</td>").appendTo(str);
+                    $("<td width='20%'>" + info[i].comment + "</td>").appendTo(str);
                     str.appendTo(obj);
                     count++;
 
