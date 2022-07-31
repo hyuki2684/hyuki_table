@@ -77,7 +77,7 @@
                     $("<td width='5%'>" + mark + x + "</td>").appendTo(str);
 
                     // Title
-                    $("<td width='35%'>" +
+                    $("<td width='45%'>" +
                         "<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=" + info[
                             i]
                         .md5 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
@@ -106,19 +106,19 @@
         		astr += "<br />(" + info[i].name_pack + ")";
         	}
         }
-        $("<td width='15%'>" + astr + "</td>").appendTo(str);
+        $("<td width='20%'>" + astr + "</td>").appendTo(str);
         // 差分
         if(info[i].url_diff != "" && info[i].url_diff != null) {
         	if(info[i].name_diff != "" && info[i].name_diff != null) {
-	        $("<td width='15%'><a href='" + info[i].url_diff + "'>" + info[i].name_diff + "</a></td>").appendTo(str);
+	        $("<td width='20%'><a href='" + info[i].url_diff + "'>" + info[i].name_diff + "</a></td>").appendTo(str);
         	} else {
-	        $("<td width='15%'><a href='" + info[i].url_diff + "'>" + info[i].url_diff + "</a></td>").appendTo(str);
+	        $("<td width='20%'><a href='" + info[i].url_diff + "'>" + info[i].url_diff + "</a></td>").appendTo(str);
         	}
         } else {
         	if(info[i].name_diff != "" && info[i].name_diff != null) {
-	        $("<td width='15%'>" + info[i].name_diff + "</td>").appendTo(str);
+	        $("<td width='20%'>" + info[i].name_diff + "</td>").appendTo(str);
         	} else {
-	        $("<td width='15%'></td>").appendTo(str);
+	        $("<td width='20%'></td>").appendTo(str);
         	}
         }
                     
