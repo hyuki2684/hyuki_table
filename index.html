@@ -74,16 +74,16 @@
                     var str = $("<tr></tr>");
 
                     // Level
-                    $("<td width='14%'>" + mark + x + "</td>").appendTo(str);
+                    $("<td width='15%'>" + mark + x + "</td>").appendTo(str);
 
                     // Title
                     if (info[i].md5 != "" && info[i].md5 != null) {
-                        $("<td width='35%'>" +
+                        $("<td width='25%'>" +
                             "<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=" + info[i]
                             .md5 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
                     }
                     else{
-                        $("<td width='45%'>" +
+                        $("<td width='25%'>" +
                             "<a href='https://mocha-repository.info/song.php?sha256=" + info[i]
                             .sha256 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
                     }
@@ -112,19 +112,19 @@
                             astr += "<br />(" + info[i].name_pack + ")";
                         }
                     }
-                    $("<td width='20%'>" + astr + "</td>").appendTo(str);
+                    $("<td width='15%'>" + astr + "</td>").appendTo(str);
                     // 差分
                     if (info[i].url_diff != "" && info[i].url_diff != null) {
                         if (info[i].name_diff != "" && info[i].name_diff != null) {
-                            $("<td width='20%'><a href='" + info[i].url_diff + "'>" + info[i].name_diff + "</a></td>").appendTo(str);
+                            $("<td width='15%'><a href='" + info[i].url_diff + "'>" + info[i].name_diff + "</a></td>").appendTo(str);
                         } else {
-                            $("<td width='20%'><a href='" + info[i].url_diff + "'>" + info[i].url_diff + "</a></td>").appendTo(str);
+                            $("<td width='15%'><a href='" + info[i].url_diff + "'>" + info[i].url_diff + "</a></td>").appendTo(str);
                         }
                     } else {
                         if (info[i].name_diff != "" && info[i].name_diff != null) {
-                            $("<td width='20%'>" + info[i].name_diff + "</td>").appendTo(str);
+                            $("<td width='15%'>" + info[i].name_diff + "</td>").appendTo(str);
                         } else {
-                            $("<td width='20%'></td>").appendTo(str);
+                            $("<td width='15%'></td>").appendTo(str);
                         }
                     }
 
