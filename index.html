@@ -63,7 +63,7 @@
                 for (var i = 0; i < info.length; i++) {
                     if (x != info[i].level) {
                         if (obj_sep != null) {
-                            obj_sep.html("<td colspan='7'>" + "<b>" + mark + x + " (" + count +
+                            obj_sep.html("<td colspan='6'>" + "<b>" + mark + x + " (" + count +
                                 "譜面)</b></td>");
                         }
                         obj_sep = $("<tr class='table-dark' style='text-align:center' id='" + mark + info[i].level +
@@ -136,7 +136,7 @@
                     }
 
                     // Comment
-                    $("<td width='23%>" + info[i].comment + "</td>").appendTo(str);
+                    $("<td width='23%'>" + info[i].comment + "</td>").appendTo(str);
                     str.appendTo(obj);
                     count++;
 
@@ -144,7 +144,7 @@
                 $("</tbody>").appendTo(obj);
 
                 if (obj_sep != null) {
-                    obj_sep.html("<td class='table-dark' style='text-align:center' colspan='7'>" + "<b>" + mark + x +
+                    obj_sep.html("<td class='table-dark' style='text-align:center' colspan='6'>" + "<b>" + mark + x +
                         " (" + count + "譜面)</b></td>");
                 }
             }
